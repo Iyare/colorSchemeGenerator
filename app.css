@@ -8,25 +8,43 @@ body {
 .container {
     margin-left: auto;
     margin-right: auto;
-    padding-right: 1em;
-    padding-left: 1em;
-    /* max-width: 750px; */
+    /* padding-right: 1em;
+    padding-left: 1em; */
+    max-width: 550px;
 }
 
 header {
-    background-color: bisque;
+
     padding: 1.5em 0;
     width: 100%;
+    box-shadow: 0 0 10px#2c2c2c81;
 
     form {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0.2em;
-
-        input, select, button {
+        flex-wrap: wrap;
+        gap: 0.9em;
+ 
+        input{
             border: none;
-            padding: 0.5em 0.5em;
+                height: 45px;
+            cursor: pointer;
+            border-radius: 5px;
+            flex-shrink: 1;
+        }
+        
+        select, button {
+            border: 1px solid #00000049;
+            background-color: #ffffff;
+            padding: 0.9em 01em;
+             border-radius: 5px;
+             cursor: pointer;
+        }
+        
+        select {
+           flex-shrink: 1;
+           flex-grow: 2;
         }
 
     }
@@ -35,19 +53,15 @@ header {
 
 #color-pallet {
    background-color: rgb(160, 160, 160);
-    /* width:80%; */
-    
+  
     
    #color-container{
-    background-color: blueviolet;
     display: grid;
     grid-template-columns: repeat(6, auto);
-    width: inherit;
     
     .colors {
         background-color: rgb(255, 205, 140);
-        width: 100%;
-        border: 1px solid black;
+       border: 1px solid black;
         min-height: 50vh;
     }
    }
