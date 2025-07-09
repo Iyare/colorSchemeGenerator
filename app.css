@@ -1,4 +1,54 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+   
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1em;
+    padding-left: 1em;
+    /* max-width: 750px; */
+}
+
+header {
+    background-color: bisque;
+    padding: 1.5em 0;
+    width: 100%;
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2em;
+
+        input, select, button {
+            border: none;
+            padding: 0.5em 0.5em;
+        }
+
+    }
+
+}
+
+#color-pallet {
+   background-color: rgb(160, 160, 160);
+    /* width:80%; */
+    
+    
+   #color-container{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    width: inherit;
+    
+    .colors {
+        background-color: rgb(255, 205, 140);
+        width: 100%;
+        border: 1px solid black;
+        min-height: 50vh;
+    }
+   }
 }
