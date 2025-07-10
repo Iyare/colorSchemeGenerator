@@ -24,10 +24,14 @@
 
     function renderColor(apiData) {
             apiData.colors.forEach((color) => {
-            const div = document.createElement('div');
-            div.setAttribute('class', 'colors');
-            div.style.backgroundColor = color.hex.value;
-            colorDisplay.append(div)
+                const div = document.createElement('div')
+                const colorCode = document.createElement("span");
+                div.setAttribute('class', 'colors');
+                colorCode.setAttribute("class", 'color-code');
+                colorCode.textContent = color.hex.value;
+                div.append(colorCode);
+                div.style.backgroundColor = color.hex.value;
+                colorDisplay.append(div)
         })
 
     }

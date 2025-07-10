@@ -3,6 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     color: #000000b6;
+    font-size: 16px;
 }
 
 .container {
@@ -10,14 +11,15 @@ body {
     margin-right: auto;
     padding-left: 1em;
     padding-right:1em;
-    max-width: 550px;
+    /* max-width: 550px; */
 }
 
 header {
     color: inherit;
     padding: 1.5em 0;
     box-shadow: 0 0 10px #2c2c2c81;
-
+    position:fixed;
+    background-color: white;
     form {
         display: flex;
         justify-content: space-evenly;
@@ -40,11 +42,13 @@ header {
             padding: 0.9em 1em;
             border-radius: 5px;
             cursor: pointer;
+            
+        }
+        button {
             flex-grow: 1;
         }
-        
         select {
-          flex-grow: 2;
+          flex-grow: 8;
        }     
                
         button:hover {
@@ -57,13 +61,26 @@ header {
       #color-container {
         display: grid;
         grid-template-columns: repeat(6, auto);
-        padding: 0.5em 0;
+        padding: 0.3em 0;
         
         .colors {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            margin-top: 140px;
             background-color: rgb(253, 207, 147);
             border-left: 1px solid #fff;
             border-right: 1px solid #fff;
-            min-height: 50vh;
+            min-height: 40vh;
+            
+            span {
+                background-color: #FFFDFE;
+                width: 100%;
+                font-size: 0.6rem;
+                padding:1em 0;
+                text-align: center;
+                color:#aaa;
+            }
         }
     }
 }
