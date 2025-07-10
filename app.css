@@ -44,7 +44,7 @@ header {
         }
         
         select {
-          flex-grow: 3;
+          flex-grow: 2;
        }     
                
         button:hover {
@@ -61,8 +61,8 @@ header {
         padding: 0.5em 0;
         
         .colors {
-            background-color: rgb(202, 130, 35);
-            border: 1px solid black;
+            background-color: rgb(253, 207, 147);
+            /* border: 1px solid black; */
             min-height: 50vh;
         }
     }
