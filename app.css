@@ -24,8 +24,7 @@ header {
         align-items: center;
         flex-wrap: wrap;
         gap: 0.3em;
-       
-        
+
         input {
             border: none;
             height: 45px;
@@ -49,7 +48,6 @@ header {
                
         button:hover {
             background-color: rgb(255, 202, 137);
-          
         }
    }
 }
@@ -62,7 +60,6 @@ header {
         
         .colors {
             background-color: rgb(253, 207, 147);
-            /* border: 1px solid black; */
             min-height: 50vh;
         }
     }
