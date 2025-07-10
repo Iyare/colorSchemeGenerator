@@ -40,6 +40,7 @@ header {
             padding: 0.9em 1em;
             border-radius: 5px;
             cursor: pointer;
+            flex-grow: 1;
         }
         
         select {
@@ -60,6 +61,8 @@ header {
         
         .colors {
             background-color: rgb(253, 207, 147);
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
             min-height: 50vh;
         }
     }
