@@ -77,7 +77,7 @@ header {
             align-items: end;
             border-radius: 8px;
             margin-top: 140px;
-            background-color: rgb(253, 207, 147);
+            background-color: #fdcf93;
             border-left: 1px solid #fff;
             border-right: 1px solid #fff;
             min-height: 40vh;
@@ -92,4 +92,10 @@ header {
             }
         }
     }
+}
+
+footer {
+    text-align: center;
+    margin: 2em;
+    font-size: 0.8rem;
 }
