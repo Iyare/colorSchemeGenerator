@@ -4,13 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Scheme Generator | Portfolio Project</title>
+    
+    <link rel="stylesheet" href="app.css">
+    <script type="module" src="app.js" defer></script>
 </head>
 <body>
     <header>
-        
+      <form action="" class="container">
+         
+        <input type="color" name="color-picker" id="color-picker">
+        <label for="color"></label>
+         <label for="color-schemes"> </label>
+           <select name="color-schemes" id="color-schemes">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-Dark</option>
+                <option value="monochrome-light">Monochrome-Light</option>
+                <option value="analogic">Analogic</option>
+                <option value="analogic-complement">Analogic-Complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <button type="submit">Get color scheme</button>
+      </form>
+           
+      
     </header>
-    <main>
-        
+    <main id="color-pallet" class="container">
+      <div id="color-container">
+          <div class="colors"></div>
+        <div class="colors"></div>
+        <div class="colors"></div>
+        <div class="colors"></div>
+        <div class="colors"></div>
+        <div class="colors"></div>
+      </div>
     </main>
 </body>
 </html>

@@ -1,4 +1,69 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    color: #000000b6;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right:1em;
+    max-width: 550px;
+}
+
+header {
+    color: inherit;
+    padding: 1.5em 0;
+    box-shadow: 0 0 10px #2c2c2c81;
+
+    form {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.3em;
+       
+        
+        input {
+            border: none;
+            height: 45px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        select,
+        button {
+            color: inherit;
+            border: 1px solid #00000049;
+            background-color: #ffffff00;
+            padding: 0.9em 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        select {
+          flex-grow: 3;
+       }     
+               
+        button:hover {
+            background-color: rgb(255, 202, 137);
+          
+        }
+   }
+}
+
+#color-pallet {
+      #color-container {
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        padding: 0.5em 0;
+        
+        .colors {
+            background-color: rgb(202, 130, 35);
+            border: 1px solid black;
+            min-height: 50vh;
+        }
+    }
 }
